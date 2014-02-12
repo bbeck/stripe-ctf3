@@ -87,7 +87,7 @@ as many runs as possible before the competition ended.
 I graphed some of the raw data of my runs with my raw score, Stripe's raw score,
 and the ratio between them:
 
-![Scores](level4/scores.png)
+![Scores](scores.png)
 
 As you can see by the small red spikes there were very infrequent inputs where
 my code would just get an unusually high score -- but those red spikes aren't
