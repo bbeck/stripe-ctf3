@@ -1,0 +1,6 @@
+id: worker1
+
+http:
+  port: 9091
+  adminPort: 9091
+

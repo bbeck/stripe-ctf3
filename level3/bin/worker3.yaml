@@ -1,0 +1,5 @@
+id: worker3
+
+http:
+  port: 9093
+  adminPort: 9093

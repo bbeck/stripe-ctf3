@@ -1,0 +1,8 @@
+http:
+  port: 9090
+  adminPort: 9090
+
+id: master
+
+logging:
+  level: ALL

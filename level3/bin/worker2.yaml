@@ -1,0 +1,6 @@
+id: worker2
+
+http:
+  port: 9092
+  adminPort: 9092
+

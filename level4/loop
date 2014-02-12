@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+TIMEOUT="$(brew --prefix coreutils)/bin/gtimeout"
+while [[ true ]]; do
+  ${TIMEOUT} -s KILL 600s git push 2>&1 | sed -n '/8</,/normalized score/p'
+  echo
+  echo
+done |
+tee -a scores

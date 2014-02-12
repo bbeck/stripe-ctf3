@@ -1,0 +1,23 @@
+#!/bin/bash
+set -eu
+
+jar_path="$(dirname "$0")/../level3.jar"
+
+if [ -f "$jar_path" ]; then
+  echo "$0: $jar_path is built; running the jar"
+
+  if [[ "$1" == "--master" ]]; then
+    set -x
+    exec java -DFile.encoding=UTF8 -DUser.timezone=UTC -Xmx256m -cp "$jar_path" "com.stripe.ctf.instantcodesearch.instantcodesearch" "--server" "$@"
+    set +x
+  fi
+
+  if [[ "$1" == "--id" && "$2" == "1" ]]; then
+    set -x
+    exec java -DFile.encoding=UTF8 -DUser.timezone=UTC -Xmx512m -cp "$jar_path" org.isomorphism.stripe.level3.Level3Service server bin/worker${2}.yaml
+    set +x
+  fi
+else
+  echo "$0: $jar_path is not built"
+  exit 1
+fi
