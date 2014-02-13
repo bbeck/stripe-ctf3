@@ -76,7 +76,7 @@ probably quite similar to what pretty much everyone else had?  Well this is
 just where I started to game another aspect of the system.  If you look at the
 way that scores were computed, your score was basically a ratio of how well your
 code performed on a given test compared to the reference implementation that
-Stripe wrote.  So you score will be really high if you either do exceptionally
+Stripe wrote.  So your score will be really high if you either do exceptionally
 well on a given test case *OR* if Stripe's reference implementation did 
 exceptionally poorly.  Since my theory is that most of us had incredibly similar
 implementations, the only real way to get ahead would be to get your code to
